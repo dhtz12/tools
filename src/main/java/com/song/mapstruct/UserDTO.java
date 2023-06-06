@@ -12,4 +12,6 @@ public class UserDTO {
     private String name;
     private Integer age;
     private String addr;
+    private String jobName;
+    private String jobDesc;
 }

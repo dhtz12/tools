@@ -6,9 +6,13 @@ public class MapstructTest {
         user.setId(1);
         user.setName("song");
         user.setAge(18);
-        user.setAddr("shanghai");
+        user.setAddress("shanghai");
+        Job job = new Job();
+        job.setJobDesc("java");
+        job.setJobName("developer");
+        user.setJob(job);
 
-        UserDTO userDTO = UserMapper.INSTANCE.domain2dto(user);
+        UserDTO userDTO = UserMapper.INSTANCE.userAttr2dto(user);
         System.out.println(userDTO);
     }
 }
